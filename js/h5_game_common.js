@@ -17,7 +17,7 @@ $("#close-rule").click(function () {
 /*中奖信息提示*/
 function win(i) {
     //遮罩层显示
-    $win_pic.css("background-image", "url('../image/prize/prize"+i+".png')")
+    $win_pic.css("background-image", "url('../image/prize/prize"+i+".jpg')")
     $mask.show();
     $winning.addClass("reback");
     setTimeout(function () {

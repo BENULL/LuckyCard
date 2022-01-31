@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>幸运卡牌</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common_mobile.css?version=1.0.0">
+    <link rel="stylesheet" href="css/index.css?version=1.0.0">
+    <!-- 移动端适配 -->
+    <script>
+        var html = document.querySelector('html');
+        changeRem();
+        window.addEventListener('resize', changeRem);
+
+        function changeRem() {
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + 'px';
+        }
+    </script>
+</head>
+
+<body>
+<div id="wrap">
+    
+    <div class="main">
+        <h2>今日还有 <span id="change"> 2 </span> 次翻牌机会</h2>
+        <ul class="box">
+            <li class="animate1">
+                <img src="image/pattern1.png">
+            </li>
+            <li class="animate2">
+                <img src="image/pattern2.png">
+            </li>
+            <li class="animate3">
+                <img src="image/pattern3.png">
+            </li>
+            <li class="animate4">
+                <img src="image/pattern4.png">
+            </li>
+            <li class="animate5">
+                <img src="image/pattern5.png">
+            </li>
+            <li>
+                <img src="image/pattern6.png">
+            </li>
+        </ul>
+        
+    </div>
+    <div id="mask-card"></div>
+    
+    <!--中奖提示-->
+    <div id="mask">
+        <div class="blin"></div>
+        <div class="caidai"></div>
+        <div class="winning">
+            <div class="red-head"></div>
+            <div class="red-body"></div>
+            <div id="card">
+                <a href="" target="_self" class="win"></a>
+            </div>
+            <a href="" target="_self" class="btn"></a>
+            <span id="close"></span>
+        </div>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/h5_game_common.js?version=1.0.0"></script>
+<script src="js/index.js?version=1.0.0"></script>
+</body>
+</html>
